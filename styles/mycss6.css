@@ -1,0 +1,189 @@
+body {
+	background-color:#f6feff;}
+
+.navbar {
+	position: sticky;
+	top: 0;
+}
+
+.nav-link {
+	color: rgb(4, 4, 4);
+	margin-left: 100px;
+}
+
+.nav-link:hover {
+	background-color: rgb(226, 218, 205);
+}
+
+.navbar-brand img {
+	width: 300px;
+}
+
+.navbar-text {
+	margin-left: 100px;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: 700;
+	color: black;
+}
+
+.navbar-nav .nav-link.active {
+	color: rgb(250, 128, 5);
+}
+
+
+
+.wrapper {
+	width: 100%;
+	height: 0%;
+	display: flex;
+	align-items: center;
+	margin-left: 680px;
+	margin-top: -62px;
+	/* justify-content: center; */
+	
+}
+
+.map_wrapper {
+	max-width: 550px;
+	position: relative;
+	
+	
+}
+
+.map_wrapper svg {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+
+.Tablereg {
+	top: 80%; /* Отступ в процентах от верхнего края окна */
+	left: 20%; /* Отступ в процентах от левого края окна */
+	/* width: 450px;  Ширина блока */
+	width:80px; /* Ширина блока */
+	height: 62px; /* Высота блока */
+
+	margin-top: 150px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине ширины блока со знаком минус */
+	margin-left: 380px;
+}
+
+
+
+
+
+table {
+	/* border-collapse: collapse; */
+	width: 300px;
+	/* margin-bottom: 20px; */
+	
+
+}
+
+table th,
+table td {
+	border: 1px solid #ccc;
+	padding: 7.6px;
+	text-align: center;
+}
+
+table tr {
+	cursor: pointer;
+}
+
+table tr.selected {
+	background-color: #f0c040;
+	/* Цвет выделенной строки */
+}
+
+svg .region {
+	fill: none;
+	/* stroke: #000000; */
+
+	transition: fill 0.3s;
+	stroke: rgb(0, 0, 0);
+	stroke-width: 7px;
+	cursor: pointer;
+	pointer-events: all;
+	opacity: 0.7;
+	/* fill: rgb(201, 165, 97); */
+	transition: 0.3;
+}
+
+svg .region:hover {
+	fill: #ebab08;
+	/* Подсветка при наведении на область */
+	opacity: 0.8;
+	transition: 0.3;
+}
+
+svg .region.selected {
+	fill: #9e8c72;
+	/* Цвет выделенной области */
+}
+
+
+
+
+.wrapper-simple {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 45px;
+    padding: 10px 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5fafe), to(#e2edf4));
+    border-radius: 5px;
+    box-shadow: inset rgba(255, 254, 255, 1) 0 0.1em 2px,
+                    #9bb6c9 0 1px 2px;
+    position: relative;
+}
+.wrapper-simple input[type=submit] {
+    margin-top: .2em;
+    z-index: 2;
+    position: relative;
+    vertical-align: top;
+    height: 43px;
+    min-width: 55px;
+    border-radius: 3px;
+    border: 1px solid #aa7818;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffb700), to(#ff8c00));
+    box-shadow: inset rgba(255, 255, 255, .5) 0 0.1em 0.1em;
+    cursor: pointer;
+}
+    .wrapper-simple input[type=submit]:active {
+        box-shadow: inset rgba(0,0,0,.4) 0 1px 1px;
+    }
+    .wrapper-simple input[type=submit]:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffcb48), to(#ff9c23));
+    }
+.wrapper-simple input[type=text] {
+    font-family: Arial;
+    font-weight: bold;
+    color: #1a3d51;
+    background: #d8e6ef;
+    border-radius:2px;
+    padding: 10px 10px 15px 10px;
+    width: 250px;
+    border: 0;
+    font-size: 16px;
+    text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 1px;
+    box-shadow: inset rgba(0,0,0,.4) 0 1px 1px;
+    position: absolute;
+    width: 1px;
+    z-index: 2;
+    padding-left: 2em;
+    margin-left: .2em;
+}
+.wrapper-simple img {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 4;
+}
